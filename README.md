@@ -1,6 +1,6 @@
 # South India Tours — a local guide in Kerala
 
-A responsive, contact-only website for Binu Dennis, a local tour guide in Kerala. Six destinations: Kochi, Kumarakom, Alleppey, Munnar, Thekkady and Kovalam. Each has a static page with scenery, history, highlights, visiting notes and a four-photo gallery. The homepage includes destination cards and a photo journal. No bookings, payments or submission forms.
+A responsive, contact-only website for Dennis Anthony, a local tour guide in Kerala. Six destinations: Kochi, Kumarakom, Alleppey, Munnar, Thekkady and Kovalam. Each has a static page with scenery, history, highlights, visiting notes and a four-photo gallery. The homepage includes destination cards and a photo journal. No bookings, payments or submission forms.
 
 ## Preview
 
@@ -32,7 +32,7 @@ Destination descriptions are original summaries. Background-reading links are in
 
 `about.html` is a standalone guide page, linked from the homepage and every destination. It includes an introductory biography, 18 user-supplied photographs, a personal photo journal and three vehicle sections: Toyota MPV, touring minibus and Tata passenger van. Seating capacities, model variants and equipment have not been assumed. Vehicle images and interiors can be enlarged using the shared photo dialog.
 
-Contact name: Binu Dennis. WhatsApp: https://wa.me/919447134447. Phone link: tel:+919447134447. These details appear on the homepage and About page; clicking WhatsApp opens a conversation without automatically sending a message. No email address has been supplied.
+Contact name: Dennis Anthony; local name: Binu. WhatsApp: https://wa.me/919447134447. Phone link: tel:+919447134447. These details appear on the homepage and About page; clicking WhatsApp opens a conversation without automatically sending a message. No email address has been supplied.
 
 The user-supplied photographs are in `assets/guide/` and `assets/transport/`. Their original archive filenames and dimensions are recorded in `assets/guide/sources.json`. Web copies preserve the photos’ content, use JPEG compression and omit original metadata. Original ZIP archives remain separate from the site.
 
