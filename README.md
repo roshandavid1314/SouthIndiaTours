@@ -20,3 +20,5 @@ No dependencies or build step are required. JavaScript only updates the footer y
 - Review photography and permissions before launch. Kerala photographs are stored locally in assets, sourced from Unsplash (photo-1602216056096-3b40cc0c9944 and photo-1593693397690-362cb9666fc2). The Kochi card uses a decorative coastal illustration rather than a location photograph. Fonts are served by Google Fonts with system fallbacks.
 
 Reference: https://www.intersighttours.com/packages/jet-to-kerala/stunning-backwaters-of-kerala
+
+Additional destination cards: Munnar, Thekkady, Varkala and Kovalam. Confirm guide coverage before launch. These cards currently use decorative CSS landscapes; Kochi photography remains pending because image downloads were denied by the runtime network proxy. No illustration is presented as a location photograph.
