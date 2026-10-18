@@ -1,6 +1,6 @@
 # South India Tours — a local guide in Kerala
 
-A responsive, contact-only website for Dennis Anthony, a local tour guide in Kerala. Six destinations: Kochi, Kumarakom, Alleppey, Munnar, Thekkady and Kovalam. Each has a static page with scenery, history, highlights, visiting notes and a four-photo gallery. The homepage includes destination cards and a photo journal. No bookings, payments or submission forms.
+A responsive, contact-only website for Dennis Anthony, a Kerala-based tour guide covering all of South India. Six destinations: Kochi, Kumarakom, Alleppey, Munnar, Thekkady and Kovalam. Each has a static page with scenery, history, highlights, visiting notes and a four-photo gallery. The homepage includes destination cards and a photo journal. No bookings, payments or submission forms.
 
 ## Preview
 
@@ -37,3 +37,5 @@ Contact name: Dennis Anthony; local name: Binu. WhatsApp: https://wa.me/91944713
 The user-supplied photographs are in `assets/guide/` and `assets/transport/`. Their original archive filenames and dimensions are recorded in `assets/guide/sources.json`. Web copies preserve the photos’ content, use JPEG compression and omit original metadata. Original ZIP archives remain separate from the site.
 
 Binu can expand the short introduction with his personal background, languages and experience later.
+
+Coverage: Kerala, Tamil Nadu, Karnataka, Andhra Pradesh and Telangana. The six destination detail pages remain featured Kerala highlights; homepage and guide introductions promote South India-wide tours.
