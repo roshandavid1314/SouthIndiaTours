@@ -14,3 +14,5 @@ h1{font-size:72px;line-height:1.12}.hero-content{padding-top:95px}.draft-label{d
 .local-name{display:block;font:12px/1.7 "DM Sans",sans-serif;color:var(--muted);margin-top:9px}
 
 .region-coverage{text-align:center;padding:65px 9%;background:#eaece1}.region-coverage>p:not(.eyebrow){max-width:680px;margin:25px auto;font-size:14px;color:var(--muted)}.region-coverage ul{list-style:none;padding:0;display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:28px 0}.region-coverage li{border:1px solid #bbc7b1;padding:8px 16px;font-size:12px}.logo span{letter-spacing:2px;font-size:8px}
+
+.personal-photo-grid{grid-template-columns:repeat(3,minmax(0,1fr))}@media(max-width:800px){.personal-photo-grid{grid-template-columns:1fr}.personal-photo-grid img{height:420px}.personal-photo-grid figure:nth-child(even){padding-top:0}}
