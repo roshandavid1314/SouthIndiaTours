@@ -1,6 +1,6 @@
 # South India Tours — a local guide in Kerala
 
-A responsive, contact-only website for Dennis Anthony, a Kerala-based tour guide covering all of South India. Six destinations: Kochi, Kumarakom, Alleppey, Munnar, Thekkady and Kovalam. Each has a static page with scenery, history, highlights, visiting notes and a four-photo gallery. The homepage includes destination cards and a photo journal. No bookings, payments or submission forms.
+A responsive, contact-only website for Dennis Anthony, a Kerala-based tour guide covering all of South India. Six destinations: Kochi, Kumarakom, Alleppey, Munnar, Thekkady and Kovalam. Each has a static page with scenery, history, highlights, visiting notes and a four-photo gallery. The homepage focuses on tour coverage, destination cards and contact details. Personal introductions and the personal photo journal are on the About page. No bookings, payments or submission forms.
 
 ## Preview
 
@@ -20,7 +20,7 @@ Edit `destinations.json`, then regenerate the six pages and homepage destination
 python3 scripts/build-destinations.py
 ```
 
-The generator only replaces the homepage destination collection and photo journal, plus the generated pages in `destinations/`. Other homepage content remains editable in `index.html`. Photo dialogs support keyboard activation, Escape to close and focus return to the opening button.
+The generator replaces the homepage destination collection and the generated pages in `destinations/`. It does not add a duplicate destination photo journal. Other homepage content remains editable in `index.html`. Photo dialogs support keyboard activation, Escape to close and focus return to the opening button.
 
 ## Photography and content
 

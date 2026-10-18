@@ -10,11 +10,9 @@ def image(photo,prefix='',lazy=True):
 def card(p,prefix=''):
  return f'<a class="destination" href="{prefix}destinations/{p["slug"]}.html">{image(p["photos"][0],prefix)}<div><small>{e(p["tag"])}</small><h3>{e(p["name"])} <span aria-hidden="true">→</span></h3><p>{e(p["summary"])}</p><span class="card-link">Discover {e(p["name"])} <span aria-hidden="true">→</span></span></div></a>'
 section='<section class="destinations" id="destinations"><div class="section-top"><div><p class="eyebrow">START IN KERALA. EXPLORE ALL OF SOUTH INDIA.</p><h2>Find your kind of <em>somewhere.</em></h2></div><span class="muted">Six featured Kerala destinations. Tours across South India.</span></div><div class="destination-grid">'+''.join(card(p) for p in places)+'</div><p class="destination-note">Take a closer look at each place — its stories, scenery and everyday wonders. These six Kerala highlights are a starting point. Contact Dennis to explore routes across South India.</p></section>'
-strip='<section class="photo-journal" aria-labelledby="journal-title"><div class="journal-heading"><p class="eyebrow">POSTCARDS FROM THE SOUTH</p><h2 id="journal-title">A place for every <em>feeling.</em></h2><p>Six little windows into a landscape full of contrasts.</p></div><div class="journal-grid">'+''.join(f'<a href="destinations/{p["slug"]}.html"><figure>{image(p["photos"][2])}<figcaption><span>0{i+1}</span> {e(p["name"])}</figcaption></figure></a>' for i,p in enumerate(places))+'</div></section>'
 home=(root/'index.html').read_text()
 home=re.sub(r'<section class="destinations".*?</section>',section,home,count=1,flags=re.S)
 home=re.sub(r'<section class="photo-journal".*?</section>','',home,flags=re.S)
-home=home.replace('<section class="moments"',strip+'<section class="moments"',1)
 (root/'index.html').write_text(home)
 for i,p in enumerate(places):
  others=[x for x in places if x['slug']!=p['slug']][:3]
@@ -36,4 +34,4 @@ for i,p in enumerate(places):
 </main><footer><a class="logo" href="../index.html">south india<span>SOUTH INDIA, WITH A LOCAL</span></a><p>South India. A local perspective.</p><span>© <span id="year"></span> South India Tours</span><a href="#">Back to top ↑</a></footer>
 <dialog class="photo-dialog" aria-label="Expanded destination photograph"><button class="photo-close" type="button" aria-label="Close photograph">Close ×</button><img alt=""><p></p></dialog><script src="../app.js"></script></body></html>'''
  (root/'destinations'/f'{p["slug"]}.html').write_text(page)
-print('Built six destination pages, homepage cards and photo journal.')
+print('Built six destination pages and homepage cards.')
